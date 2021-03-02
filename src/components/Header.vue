@@ -1,8 +1,13 @@
 <template>
   <div class="header">
       <div id="nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
+          <div class="logo">
+              <router-link to="/">
+                  <img src="../assets/kermit.png" alt="logo">
+              </router-link>
+          </div>
+          <router-link class="link" to="/about">About</router-link>
+          <a class="link" href="https://github.com/hellonathapon?tab=repositories" target="_blank">Github</a>
       </div>
   </div>
 </template>
@@ -17,22 +22,51 @@ export default {
 .header {
     grid-column: 1 / span 12;
     #nav {
-    /* padding: 30px; */
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
 
-    a {
-        font-weight: bold;
-        color: #2c3e50;
-
-        &.router-link-exact-active {
-        color: #42b983;
+        .logo{
+            img{
+                width: 40px;
+            }
         }
-    }
+        a {
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+
+            &.router-link-exact-active {
+            color: #42b983;
+            }
+        }
+        .link{
+            display: none;
+        }
     }
 }
 
 @media only screen and (min-width: 700px) {
     .header {
         grid-column: 1 / span 3;
+
+        #nav{
+            position: sticky;
+            top: 0;
+            
+            .logo{
+                img{
+                    width: 100px;
+                }
+            }
+            .link{
+                display: block;
+                font-size: 2rem;
+                margin: .5rem 0;
+                font-weight: 200;
+            }
+        }
     }
 }
 </style>

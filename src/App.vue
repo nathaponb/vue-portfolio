@@ -27,6 +27,8 @@ export default {
 }
 #app {
   display: grid;
+  max-width: 1550px;
+  margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
   font-family: 'Quicksand', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
