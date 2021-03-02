@@ -1,13 +1,19 @@
 <template>
   <div class="three card">
       <router-link to="/about">
+        <div class="overlay"></div>
         <img src="../assets/tank-bg.jpg" alt="chart">
       </router-link>
 
       <article>
         <h2>Hello There</h2>
         <ul>
-            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+            <li><a href="https://www.google.com/" target="_blank">
+              <img src="../assets/svg/react-2.svg" alt="react">
+            </a></li>
+            <li><a href="https://www.python.org/" target="_blank">
+              <img src="../assets/svg/python-5.svg" alt="python">
+            </a></li>
         </ul>
       </article>
   </div>
@@ -22,7 +28,7 @@ export default {
 <style scoped lang="scss">
 .three{
     grid-column: 1 / span 12;
-    grid-row: 5 / 8;
+    grid-row: 5 / 7;
     // For card, apply global style from home.vue 
 }
 

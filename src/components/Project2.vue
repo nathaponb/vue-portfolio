@@ -1,13 +1,16 @@
 <template>
   <div class="two card">
       <router-link to="/about">
+        <div class="overlay"></div>
         <img src="../assets/chart-bg.jpg" alt="chart">
       </router-link>
 
       <article>
         <h2>Hello There</h2>
         <ul>
-            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+            <li><a href="https://www.python.org/" target="_blank">
+              <img src="../assets/svg/graphql.svg" alt="graphql">
+            </a></li>
         </ul>
       </article>
   </div>

@@ -5,10 +5,11 @@
     </router-link>
 
     <article>
-      <h2>Hello There</h2>
-      <ul>
-        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
-      </ul>
+      <h2>Hello World</h2>
+      <p>My name is Nathapon Boontaungkaew</p>
+      <p>A 25 years old Full-stack Webdeveloper (Javascript),</p>
+      <p>Data Analyst (Python)</p>
+
     </article>
   </div>
 </template>
@@ -40,8 +41,14 @@ export default {
 
   article{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 100px);
+    /* background:crimson; */
+    & > * {
+      color: #fff;
+    }
   }
 }
 </style>
