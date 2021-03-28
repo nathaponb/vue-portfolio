@@ -2,17 +2,28 @@
   <div class="two card">
       <router-link to="/about">
         <div class="overlay"></div>
-        <img src="../assets/chart-bg.jpg" alt="chart">
+        <img src="../assets/e-commerce.png" alt="e-commerce app">
       </router-link>
 
       <article>
-        <h2>Hello There</h2>
+        <h2>E-Commerce App</h2>
         <ul>
-            <li><a href="https://www.python.org/" target="_blank">
-              <img src="../assets/svg/graphql.svg" alt="graphql">
+            <li><a href="https://reactjs.org/" target="_blank" ref="noreferrer">
+              <img src="../assets/svg/react-2.svg" alt="react">
+            </a></li>
+            <li><a href="https://redux.js.org/" target="_blank" ref="noreferrer">
+              <img src="../assets/svg/redux.svg" alt="redux">
+            </a></li>
+            <li><a href="https://material-ui.com/" target="_blank" ref="noreferrer">
+              <img src="../assets/svg/md.svg" alt="material ui">
             </a></li>
         </ul>
       </article>
+
+      <div class="choice">
+        <a href="https://reactjs.org/" target="_blank" ref="noreferrer"><h2>Source code</h2></a>
+        <a href="https://hellonathapon.github.io/react-ecommerce-app/#/" target="_blank" ref="noreferrer"><h2>Live</h2></a>
+      </div>
   </div>
 </template>
 

@@ -42,14 +42,17 @@ export default {
   .card{
     position: relative;
     overflow: hidden;
+
+    /* display choices */
+    &:hover > .choice{
+      opacity: 1;
+      pointer-events: auto;
+    }
   
     a{
       overflow: hidden;
       &:hover img{
         transform: scale(1.1);
-      }
-      &:hover .overlay{
-        background: rgba(0, 0, 0, 0.3);
       }
       .overlay{
         z-index: 10;
@@ -58,7 +61,7 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease;
       }
       img{
@@ -94,6 +97,22 @@ export default {
             }
           }
         }
+      }
+    }
+
+    .choice {
+      z-index: 20;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #fff;
+      transform: translate(-50%, -50%);
+      transition: all .3s ease-in-out;
+      opacity: 0;
+      pointer-events: none;
+      a {
+        text-decoration: none;
+        color: #fff;
       }
     }
   }

@@ -6,8 +6,8 @@
                   <img src="../assets/kermit.png" alt="logo">
               </router-link>
           </div>
-          <router-link class="link" to="/about">About</router-link>
-          <a class="link" href="https://github.com/hellonathapon?tab=repositories" target="_blank">Github</a>
+          <router-link class="link" to="/about">About Me</router-link>
+          <a class="link" href="https://github.com/hellonathapon?tab=repositories" target="_blank" ref="noreferrer">Github</a>
       </div>
   </div>
 </template>

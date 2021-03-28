@@ -16,6 +16,11 @@
             </a></li>
         </ul>
       </article>
+
+      <div class="choice">
+        <a href="https://reactjs.org/" target="_blank" ref="noreferrer"><h2>Source code</h2></a>
+        <a href="https://reactjs.org/" target="_blank" ref="noreferrer"><h2>Live</h2></a>
+      </div>
   </div>
 </template>
 
