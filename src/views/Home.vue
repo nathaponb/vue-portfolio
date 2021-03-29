@@ -78,8 +78,9 @@ export default {
       position: absolute;
       top: 0;
       right: 0;
-      h2{
-        color: #fff;
+      color: #fff;
+      h2, p{
+        text-shadow: 1px 1px 1px rgba(36, 22, 22, 0.4);
       }
       ul{
         li{

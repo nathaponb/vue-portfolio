@@ -2,13 +2,16 @@
   <div class="hello">
     <router-link to="/about">
       <img src="../assets/optimized-bg-hello.jpg" alt="hello">
+      <div class="overlay"></div>
     </router-link>
 
     <article>
       <h2>Hello World</h2>
-      <p>My name is Nathapon Boontaungkaew</p>
-      <p>A 25 years old Full-stack Webdeveloper (Javascript),</p>
-      <p>Data Analyst (Python)</p>
+      <h1 class="name">My name is Nathapon Boontaungkaew</h1>
+      <h1>25 year old
+        <span class="text">{{value}}</span>
+        <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
+      </h1>
 
     </article>
   </div>
@@ -17,6 +20,53 @@
 <script>
 export default {
   name: 'HelloWorld',
+  data: () => ({
+    value: '',
+    arr: ['Programmer', 'Tech Enthusiast', 'Lofi-listener', 'Memer (ツ)'],
+    charIndex: 0,
+    arrIndex: 0,
+    typeStatus: false,
+    typeSpeed: 100,
+    eraseSpeed: 50,
+    newValDelay: 2000,
+  }),
+    methods: {
+    // push word in value char by char
+    typeText() {
+      if (this.charIndex < this.arr[this.arrIndex].length) {
+        if (!this.typeStatus) {
+          this.typeStatus = true;
+        }
+        this.value += this.arr[this.arrIndex].charAt(this.charIndex);
+        this.charIndex++;
+        setTimeout(this.typeText, this.typeSpeed);
+      } else {
+        this.typeStatus = false;
+        setTimeout(this.eraseText, this.newValDelay); // setTimeout(cb, time)
+      }
+    },
+    // erease word char and ++ arr length for new one
+    eraseText() {
+      if (this.charIndex > 0) {
+        if (!this.typeStatus) {
+          this.typeStatus = true;
+        }
+        this.value = this.arr[this.arrIndex].substring(0, this.charIndex - 1);
+        this.charIndex -= 1;
+        setTimeout(this.eraseText, this.eraseSpeed);
+      } else {
+        this.typeStatus = false;
+        this.arrIndex += 1;
+        if (this.arrIndex >= this.arr.length) {
+          this.arrIndex = 0;
+        }
+        setTimeout(this.typeText, this.eraseSpeed);
+      }
+    },
+  },
+  created() {
+    setTimeout(this.typeText, this.newValDelay + 200);
+  },
 }
 </script>
 
@@ -37,9 +87,20 @@ export default {
       height: 100%;
       width: 100%;
     }
+    .overlay {
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
   }
 
   article{
+    z-index: 20;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,6 +110,33 @@ export default {
     & > * {
       color: #fff;
     }
+    h1 {
+      .cursor {
+        display: inline-block;
+        margin-left: 3px;
+        width: 4px;
+        background-color: #fff;
+        animation: cursorBlink 1s infinite;
+      }
+      .cursor.typing {
+        animation: none;
+      }
+    }
+    .name {
+      font-weight: 300;
+    }
+  }
+}
+
+@keyframes cursorBlink {
+  49% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
   }
 }
 </style>

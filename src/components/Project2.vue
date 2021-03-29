@@ -7,6 +7,7 @@
 
       <article>
         <h2>E-Commerce App</h2>
+        <p>Online shopping cart project</p>
         <ul>
             <li><a href="https://reactjs.org/" target="_blank" ref="noreferrer">
               <img src="../assets/svg/react-2.svg" alt="react">

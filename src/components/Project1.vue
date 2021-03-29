@@ -7,6 +7,7 @@
 
       <article>
         <h2>News App</h2>
+        <p>RestApi project</p>
         <ul>
             <li><a href="https://www.typescriptlang.org/" target="_blank" ref="noreferrer">
               <img src="../assets/svg/ts.svg" alt="typescript">
