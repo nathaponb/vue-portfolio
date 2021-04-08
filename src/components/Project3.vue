@@ -2,17 +2,24 @@
   <div class="three card">
       <router-link to="/about">
         <div class="overlay"></div>
-        <img src="../assets/tank-bg.jpg" alt="chart">
+        <img src="../assets/oauth.png" alt="oauth project">
       </router-link>
 
       <article>
-        <h2>Hello There</h2>
+        <h2>OAuth Project</h2>
+        <p>Simple elegant authorize user via popular platforms</p>
         <ul>
-            <li><a href="https://www.google.com/" target="_blank">
-              <img src="../assets/svg/react-2.svg" alt="react">
+            <li><a href="https://www.google.com/" target="_blank" ref="noreferrer">
+              <img src="../assets/svg/express-1.svg" alt="express">
             </a></li>
-            <li><a href="https://www.python.org/" target="_blank">
-              <img src="../assets/svg/python-5.svg" alt="python">
+            <li><a href="https://www.google.com/" target="_blank" ref="noreferrer">
+              <img src="../assets/svg/passport.svg" alt="passport">
+            </a></li>
+            <li><a href="https://www.google.com/" target="_blank" ref="noreferrer">
+              <img src="../assets/svg/ejs.svg" alt="ejs">
+            </a></li>
+            <li><a href="https://www.python.org/" target="_blank" ref="noreferrer">
+              <img src="../assets/svg/bootstrap.svg" alt="bootstrap">
             </a></li>
         </ul>
       </article>
@@ -39,7 +46,7 @@ export default {
 
 @media only screen and (min-width: 700px) {
     .three{
-        grid-column: 1 / span 12;
+        grid-column: 1 / span 6;
     }
 }
 
