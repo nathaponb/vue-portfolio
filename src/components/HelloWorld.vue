@@ -1,28 +1,37 @@
 <template>
   <div class="hello">
     <router-link to="/about">
-      <img src="../assets/optimized-bg-hello.jpg" alt="hello">
+      <img src="../assets/pexels-photo-1714207.jpeg" alt="hello" />
       <div class="overlay"></div>
     </router-link>
 
     <article>
-      <h2>Hello World</h2>
+      <h2>Hello World 🚀</h2>
       <h1 class="name">My name is Nathapon Boontaungkaew</h1>
-      <h1>25 year old
-        <span class="text">{{value}}</span>
-        <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
+      <h2>25 year old Fullstack Web developer</h2>
+      <h1 class="thin">
+        <span>I Familiar with </span
+        ><b>
+          <span class="text">{{ value }}</span>
+          <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span></b
+        >
       </h1>
-
     </article>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   data: () => ({
-    value: '',
-    arr: ['Programmer', 'Tech Enthusiast', 'Lofi-listener', 'Memer (ツ)'],
+    value: "",
+    arr: [
+      "Javascript/Typescript",
+      "React.js/Vue.js",
+      "Node.js/Express.js",
+      "mySQL/PostgreSQL/mongoDB",
+      "C#/ASP.NET",
+    ],
     charIndex: 0,
     arrIndex: 0,
     typeStatus: false,
@@ -30,7 +39,7 @@ export default {
     eraseSpeed: 50,
     newValDelay: 2000,
   }),
-    methods: {
+  methods: {
     // push word in value char by char
     typeText() {
       if (this.charIndex < this.arr[this.arrIndex].length) {
@@ -67,21 +76,21 @@ export default {
   created() {
     setTimeout(this.typeText, this.newValDelay + 200);
   },
-}
+};
 </script>
 
 <style scoped lang="scss">
 /**
  * direct grid child of Home 
  */
-.hello{
+.hello {
   grid-column: 1 / span 12;
   grid-row: 1 / span 2;
   position: relative;
-  
-  a{
+
+  a {
     overflow: hidden;
-    img{
+    img {
       object-fit: cover;
       object-position: center;
       height: 100%;
@@ -94,12 +103,12 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.5);
       transition: all 0.3s ease;
     }
   }
 
-  article{
+  article {
     z-index: 20;
     position: absolute;
     top: 50%;
@@ -123,6 +132,10 @@ export default {
       }
     }
     .name {
+      font-weight: 300;
+      font-size: 30px;
+    }
+    .thin {
       font-weight: 300;
     }
   }
