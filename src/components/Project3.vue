@@ -1,32 +1,32 @@
 <template>
   <div class="three card">
-    <router-link to="/about">
+    <a href="https://github.com/hellonathapon/oauth-google">
       <div class="overlay"></div>
       <img src="../assets/oauth.png" alt="oauth project" />
-    </router-link>
+    </a>
 
     <article>
       <h2>OAuth Project</h2>
       <p>Simple elegant authorize user via popular platforms</p>
       <ul>
         <li>
-          <a href="https://www.google.com/" target="_blank" ref="noreferrer">
+          <a href="https://getbootstrap.com/" target="_blank" ref="noreferrer">
+            <img src="../assets/svg/bootstrap.svg" alt="bootstrap" />
+          </a>
+        </li>
+        <li>
+          <a href="https://expressjs.com/" target="_blank" ref="noreferrer">
             <img src="../assets/svg/express-1.svg" alt="express" />
           </a>
         </li>
         <li>
-          <a href="https://www.google.com/" target="_blank" ref="noreferrer">
+          <a href="http://www.passportjs.org/" target="_blank" ref="noreferrer">
             <img src="../assets/svg/passport.svg" alt="passport" />
           </a>
         </li>
         <li>
-          <a href="https://www.google.com/" target="_blank" ref="noreferrer">
-            <img src="../assets/svg/ejs.svg" alt="ejs" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.python.org/" target="_blank" ref="noreferrer">
-            <img src="../assets/svg/bootstrap.svg" alt="bootstrap" />
+          <a href="https://www.mongodb.com/" target="_blank" ref="noreferrer">
+            <img src="../assets/svg/mongodb-icon-1.svg" alt="mongodb" />
           </a>
         </li>
       </ul>

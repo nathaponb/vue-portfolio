@@ -1,9 +1,9 @@
 <template>
   <div class="two card">
-    <router-link to="/about">
+    <a href="https://github.com/hellonathapon/react-ecommerce-app">
       <div class="overlay"></div>
       <img src="../assets/e-commerce.png" alt="e-commerce app" />
-    </router-link>
+    </a>
 
     <article>
       <h2>E-Commerce App</h2>
