@@ -5,18 +5,19 @@
       <div class="overlay"></div>
     </router-link>
 
-    <article>
-      <h2>Hello World 🚀</h2>
-      <h1 class="name">My name is Nathapon Boontaungkaew</h1>
-      <h2>25 year old Fullstack Web developer</h2>
+    <router-link to="/about" class="article">
+      <h2 class="helloworld">&lt; Hello World/&gt;</h2>
+      <h1 class="name">My name is Nathapon Boonthongkaew</h1>
+      <!-- <h2>25 year old Fullstack Web developer</h2> -->
       <h1 class="thin">
-        <span>I Familiar with </span
+        <span>I am a </span
         ><b>
           <span class="text">{{ value }}</span>
           <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span></b
         >
       </h1>
-    </article>
+      <h2>🚀</h2>
+    </router-link>
   </div>
 </template>
 
@@ -26,11 +27,10 @@ export default {
   data: () => ({
     value: "",
     arr: [
-      "Javascript/Typescript",
-      "React.js/Vue.js",
-      "Node.js/Express.js",
-      "mySQL/PostgreSQL/mongoDB",
-      "C#/ASP.NET",
+      "Fullstack Web Developer",
+      "Data Analyst",
+      "Solfware Engineer",
+      "Database manager",
     ],
     charIndex: 0,
     arrIndex: 0,
@@ -108,16 +108,20 @@ export default {
     }
   }
 
-  article {
+  .article {
     z-index: 20;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100% - 100px);
-    /* background:crimson; */
+    text-decoration: none;
+    .helloworld {
+      font-size: 1.5rem;
+    }
     & > * {
       color: #fff;
+      margin: 1rem 0;
     }
     h1 {
       .cursor {
@@ -137,6 +141,23 @@ export default {
     }
     .thin {
       font-weight: 300;
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .hello {
+    .article {
+      .helloworld {
+        font-size: 2.2rem;
+      }
+      .name {
+        font-size: 35px;
+      }
+      .thin {
+        font-size: 30px;
+      }
     }
   }
 }

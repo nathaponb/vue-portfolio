@@ -39,6 +39,12 @@
         ref="noreferrer"
         ><h2>Source code</h2></a
       >
+      <a
+        href="https://oauth-google-cat.herokuapp.com/"
+        target="_blank"
+        ref="noreferrer"
+        ><h2>Live</h2></a
+      >
     </div>
   </div>
 </template>
