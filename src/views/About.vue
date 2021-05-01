@@ -2,21 +2,30 @@
   <div class="about">
     <header>
       <h1>Natthapon Boonthongkaew</h1>
-      <h4 class="info">25 year old</h4>
-      <h4 class="info">Thai nationality</h4>
-      <h4 class="info">self-taught programmer</h4>
-      <h4 class="info">📞 (+66) 084-2313735</h4>
-      <h4 class="info">📧 hellonathapon@gmail.com</h4>
-      <h4 class="info">Languages/Tools</h4>
+      <h4 class="info">A 25 year old, Thai nationality</h4>
+      <h4 class="info">
+        UI/UX designer, Fullstack Web Developer, Data Analyst, Database Manager,
+        Self-Taught programmer
+      </h4>
+      <h4 class="info">(+66) 084-2313735</h4>
+      <h4 class="info">hellonathapon@gmail.com</h4>
+      <h4 class="info">Languages/Tools i know and happy to working with</h4>
       <h4 class="tech">
         💅 Front End: HTML, CSS, SASS, javascript, Typescript, React.js, Vue.js,
-        GraphQL, Webpack, babel
+        Rest Api, GraphQL, Webpack, babel, git
       </h4>
       <h4 class="tech">
-        💻 Back End: Node.js, Express.js, .NET CORE/ASP.NET, .NET framework
+        💻 Back End: Node.js, Express.js, C#/.NET CORE/ASP.NET
       </h4>
       <h4 class="tech">
         💾 Databases: MySQL, MSSQL, PostgreSQL, mongoDB, ORM (Entity framework)
+      </h4>
+      <h4 class="tech">
+        ⭐ Data analytics (Python) with Jupyter Notebook, Numpy, Pandas,
+        Mathplotlib, Seaborn
+      </h4>
+      <h4 class="tech">
+        🌟 Design Pattern/Programming Paradigm: MVC, OOP
       </h4>
     </header>
     <section>
@@ -25,21 +34,31 @@
         <b>- Fullstack Web Developer</b>, I am fairly good in Fullstack
         Javascript and its ecosystem
       </p>
-      <p><b>- Data analytics</b> with python in Jupyter notebook</p>
+      <p><b>- Data analytics</b>, Jupyter notebook</p>
+      <p><b>- C#/.NET CORE/ASP.NET</b>, Intermediate skills</p>
+    </section>
+
+    <section>
+      <h2>My Education"</h2>
       <p>
-        <b>- C#/.NET CORE/ASP.NET</b>, i have been learning C#/.NET recently,
-        mostly focusing on web development to grain my perspective in this
-        particular field
+        Bachelor degree in Humanity master in English from
+        <a href="https://www.mcu.ac.th/" target="_blank" ref="noreferrer"
+          >Mahachulalongkornrajavidyalaya University</a
+        >, 2019
       </p>
     </section>
 
     <section>
-      <h2>What about my Education..?"</h2>
+      <h2>Personality, hobby, interest..?</h2>
       <p>
-        2019, I gratuated Bachelor degree in Humanity master in English from
-        <a href="https://www.mcu.ac.th/" target="_blank" ref="noreferrer"
-          >Mahachulalongkornrajavidyalaya University</a
-        >
+        I am an Self-Taught programmer, Enthusiastic person
+      </p>
+      <p>
+        My hobby is learning new Programming Languages, technologies, frameworks
+        and all the related thing in this field
+      </p>
+      <p>
+        I am interested in Computer Science, Robotic, Nature, Camping, Astronomy
       </p>
     </section>
   </div>
@@ -62,7 +81,9 @@ export default {
     margin-top: 2rem;
     margin-bottom: 4rem;
     text-align: start;
-    padding: 0 1rem;
+    padding: 1rem;
+    background: #f7f9fa;
+    border-radius: 8px;
 
     h1 {
       margin-bottom: 1rem;
@@ -99,8 +120,10 @@ export default {
   .about {
     grid-column: 4 / span 12;
     min-height: 100vh;
+    background: #2c3e50;
+    padding: 1rem;
     header {
-      margin-top: 3rem;
+      margin-top: 0;
       text-align: start;
       margin-bottom: 1rem;
       h2 {

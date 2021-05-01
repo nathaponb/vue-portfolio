@@ -150,10 +150,12 @@ export default {
   .hello {
     .article {
       .helloworld {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
+        font-weight: 400;
       }
       .name {
         font-size: 35px;
+        font-weight: 700;
       }
       .thin {
         font-size: 30px;
