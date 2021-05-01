@@ -1,7 +1,10 @@
 <template>
   <div class="hello">
     <router-link to="/about">
-      <img src="../assets/pexels-photo-1714207.jpeg" alt="hello" />
+      <img
+        src="../assets/optimized-images/pexels-photo-1714207-optimize.jpeg"
+        alt="hello"
+      />
       <div class="overlay"></div>
     </router-link>
 

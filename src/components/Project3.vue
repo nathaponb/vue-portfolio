@@ -2,7 +2,7 @@
   <div class="three card">
     <a href="https://github.com/hellonathapon/oauth-google">
       <div class="overlay"></div>
-      <img src="../assets/oauth.png" alt="oauth project" />
+      <img src="../assets/optimized-images/oauth.png" alt="oauth project" />
     </a>
 
     <article>

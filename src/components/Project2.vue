@@ -2,7 +2,10 @@
   <div class="two card">
     <a href="https://github.com/hellonathapon/react-ecommerce-app">
       <div class="overlay"></div>
-      <img src="../assets/e-commerce.png" alt="e-commerce app" />
+      <img
+        src="../assets/optimized-images/e-commerce.png"
+        alt="e-commerce app"
+      />
     </a>
 
     <article>

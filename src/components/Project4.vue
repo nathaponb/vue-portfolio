@@ -2,7 +2,10 @@
   <div class="todo-app card">
     <a href="https://github.com/hellonathapon/todo-app">
       <div class="overlay"></div>
-      <img src="../assets/todo-app-thumbnail.png" alt="todo app project" />
+      <img
+        src="../assets/optimized-images/todo-app-thumbnail.png"
+        alt="todo app project"
+      />
     </a>
 
     <article>

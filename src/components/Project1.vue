@@ -2,7 +2,10 @@
   <div class="one card">
     <a href="https://github.com/hellonathapon/react-ts-news-app">
       <div class="overlay"></div>
-      <img src="../assets/news-app-thumbnail.png" alt="news-app-bg" />
+      <img
+        src="../assets/optimized-images/news-app-thumbnail.png"
+        alt="news-app-bg"
+      />
     </a>
 
     <article>
