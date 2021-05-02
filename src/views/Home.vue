@@ -33,7 +33,7 @@ export default {
  * Direct Grid child of App.vue component
  */
 .home {
-  grid-column: 1 / span 12;
+  margin-left: 0px;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -127,7 +127,8 @@ export default {
 
 @media only screen and (min-width: 700px) {
   .home {
-    grid-column: 4 / span 12;
+    margin-left: 300px;
+
     display: grid;
     grid-template-rows: repeat(6, 12rem);
   }

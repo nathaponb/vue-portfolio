@@ -75,7 +75,7 @@ export default {
  * Direct Grid child of App.vue component
  */
 .about {
-  grid-column: 1 / span 12;
+  margin-left: 0;
 
   header {
     margin-top: 2rem;
@@ -118,9 +118,10 @@ export default {
 
 @media only screen and (min-width: 700px) {
   .about {
-    grid-column: 4 / span 12;
+    margin-left: 300px;
+
     min-height: 100vh;
-    background: #2c3e50;
+    /* background: #2c3e50; */
     padding: 1rem;
     header {
       margin-top: 0;

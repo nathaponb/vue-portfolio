@@ -26,11 +26,11 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+$pri-col: #2c3e50;
+$sec-col: rgb(91, 112, 131);
+
 #app {
-  display: grid;
-  max-width: 1550px;
-  margin: 0 auto;
-  grid-template-columns: repeat(12, 1fr);
   font-family: Quicksand, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

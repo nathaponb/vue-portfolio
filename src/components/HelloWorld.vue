@@ -2,16 +2,15 @@
   <div class="hello">
     <router-link to="/about">
       <img
-        src="../assets/optimized-images/pexels-photo-1714207-optimize.jpeg"
+        src="../assets//optimized-images/blake-connally-B3l0g6HLxr8-unsplash.jpg"
         alt="hello"
       />
       <div class="overlay"></div>
     </router-link>
 
     <router-link to="/about" class="article">
-      <h2 class="helloworld">&lt; Hello World/&gt;</h2>
-      <h1 class="name">My name is Nathapon Boonthongkaew</h1>
-      <!-- <h2>25 year old Fullstack Web developer</h2> -->
+      <!-- <h2 class="helloworld">&lt; 🚀/&gt;</h2> -->
+      <h1 class="name">Nathapon Boonthongkaew</h1>
       <h1 class="thin">
         <span>I am a </span
         ><b>
@@ -19,7 +18,11 @@
           <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span></b
         >
       </h1>
-      <h2>🚀</h2>
+      <router-link to="/about" class="btn-wrap">
+        <div class="btn">
+          MY SKILLS
+        </div>
+      </router-link>
     </router-link>
   </div>
 </template>
@@ -106,7 +109,10 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      background: linear-gradient(
+        rgba(29, 38, 113, 0.6),
+        rgba(195, 55, 100, 0.6)
+      );
       transition: all 0.3s ease;
     }
   }
@@ -119,6 +125,7 @@ export default {
     transform: translate(-50%, -50%);
     width: calc(100% - 100px);
     text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(36, 22, 22, 0.4);
     .helloworld {
       font-size: 1.5rem;
     }
@@ -147,6 +154,22 @@ export default {
       font-size: 20px;
     }
   }
+
+  .btn-wrap {
+    text-decoration: none;
+    text-shadow: none;
+    .btn {
+      background: #00c58e;
+      width: 150px;
+      border: none;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+      padding: 0.75rem 1.5rem;
+      margin: 0 auto;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 0.25rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -162,6 +185,22 @@ export default {
       }
       .thin {
         font-size: 30px;
+      }
+    }
+
+    .btn-wrap {
+      text-decoration: none;
+      text-shadow: none;
+      .btn {
+        background: #00c58e;
+        width: 150px;
+        border: none;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+        padding: 0.75rem 1.5rem;
+        margin: 0 auto;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 0.25rem;
       }
     }
   }
