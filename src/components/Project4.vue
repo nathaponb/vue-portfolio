@@ -10,7 +10,7 @@
 
     <article>
       <h2>Todo App Project</h2>
-      <p>Simple elegant authorize user via popular platforms</p>
+      <p>Vue CRUD Todo list aplication</p>
       <ul>
         <li>
           <a href="https://v3.vuejs.org/" target="_blank" ref="noreferrer">

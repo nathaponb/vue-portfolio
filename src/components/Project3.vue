@@ -7,7 +7,7 @@
 
     <article>
       <h2>OAuth Project</h2>
-      <p>Simple elegant authorize user via popular platforms</p>
+      <p>An secure Authorization in simple and standard</p>
       <ul>
         <li>
           <a href="https://getbootstrap.com/" target="_blank" ref="noreferrer">

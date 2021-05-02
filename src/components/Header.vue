@@ -148,12 +148,13 @@ $sec-col: rgb(91, 112, 131);
           width: 100%;
         }
       }
-      .link {
+      .about-me-link {
         display: block;
         font-size: 2rem;
         margin: 0.5rem 0;
         font-weight: 200;
       }
+
       article {
         display: block;
         text-align: center;
@@ -176,8 +177,9 @@ $sec-col: rgb(91, 112, 131);
         }
         .social-nav-icons {
           display: flex;
-          justify-content: flex-start;
+          justify-content: space-around;
           align-items: center;
+          margin-top: 0.5rem;
           .link {
             width: 30px;
             height: 30px;
@@ -185,9 +187,9 @@ $sec-col: rgb(91, 112, 131);
               width: 100%;
             }
           }
-          .link:not(:last-child) {
+          /* .link:not(:last-child) {
             margin-right: 0.5rem;
-          }
+          } */
         }
       }
       section {

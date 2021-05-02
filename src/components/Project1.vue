@@ -9,8 +9,11 @@
     </a>
 
     <article>
-      <h2>News App</h2>
-      <p>RestApi project</p>
+      <h2>React News App</h2>
+      <p>
+        Simple React App takes JSON News Data from NewsAPI to keep you updated
+        with latest news.
+      </p>
       <ul>
         <li>
           <a
