@@ -18,11 +18,11 @@
           <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span></b
         >
       </h1>
-      <router-link to="/about" class="btn-wrap">
+      <!-- <router-link to="/about" class="btn-wrap">
         <div class="btn">
           MY SKILLS
         </div>
-      </router-link>
+      </router-link> -->
     </router-link>
   </div>
 </template>

@@ -3,18 +3,21 @@
     <div id="nav">
       <div class="logo">
         <router-link to="/">
-          <img src="../assets/optimized-images/me.jpg" alt="le me" />
+          <img
+            src="../assets/optimized-images/profile_placeholder.png"
+            alt="le me"
+          />
         </router-link>
       </div>
       <article>
         <p class="name">Nathapon</p>
         <p class="sub-name">@hellonathapon</p>
-        <div class="info">
+        <!-- <div class="info">
           <div class="icon-info">
             <img src="../assets/svg/calendar.svg" alt="date icon" />
           </div>
           Born 8 June 1996
-        </div>
+        </div> -->
         <div class="social-nav-icons">
           <a
             href="mailto:hellonathapon@gmail.com"
@@ -37,7 +40,7 @@
             target="_blank"
             ref="noreferrer"
             class="link facebook-icon"
-            ><img src="../assets/svg/fb.svg" alt="facebook icon"
+            ><img src="../assets/svg/Instagram-Icon-01.svg" alt="instagram icon"
           /></a>
         </div>
       </article>
@@ -113,8 +116,8 @@ $sec-col: rgb(91, 112, 131);
           height: 50px;
         }
         .facebook-icon {
-          width: 43px;
-          height: 43px;
+          width: 70px;
+          height: 70px;
           margin-left: 0.7rem;
         }
       }
@@ -172,7 +175,7 @@ $sec-col: rgb(91, 112, 131);
             width: 20px;
             height: 20px;
             overflow: hidden;
-            margin-right: 4px;
+            /* margin-right: 0px; */
           }
         }
         .social-nav-icons {

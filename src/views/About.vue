@@ -41,7 +41,7 @@
     <section>
       <h2>My Education"</h2>
       <p>
-        Bachelor degree in Humanity master in English from
+        Bachelor degree in Humanity from
         <a href="https://www.mcu.ac.th/" target="_blank" ref="noreferrer"
           >Mahachulalongkornrajavidyalaya University</a
         >, 2019
@@ -51,11 +51,13 @@
     <section>
       <h2>Personality, hobby, interest..?</h2>
       <p>
-        I am an Self-Taught programmer, Enthusiastic person
+        Even though i did not guatuated in CS field I am an Self-Taught
+        programmer, Enthusiastic person
       </p>
       <p>
-        My hobby is learning new Programming Languages, technologies, frameworks
-        and all the related thing in this field
+        Life is like a cup of Coffee idk lol My hobby is learning new
+        Programming Languages, technologies, frameworks and all the related
+        thing in this field
       </p>
       <p>
         I am interested in Computer Science, Robotic, Nature, Camping, Astronomy
