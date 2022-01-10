@@ -9,8 +9,10 @@
     </a>
 
     <article>
-      <h2>E-Commerce App</h2>
-      <p>Online shopping cart project</p>
+      <h2 class="en">E-Commerce App</h2>
+      <p class="en">
+        A feature rich and elegent Material Design online shopping project
+      </p>
       <ul>
         <li>
           <a href="https://reactjs.org/" target="_blank" ref="noreferrer">
@@ -35,13 +37,13 @@
         href="https://github.com/hellonathapon/react-ecommerce-app"
         target="_blank"
         ref="noreferrer"
-        ><h2>Source code</h2></a
+        ><h2 class="en">Source code</h2></a
       >
       <a
         href="https://hellonathapon.github.io/react-ecommerce-app/#/"
         target="_blank"
         ref="noreferrer"
-        ><h2>Live</h2></a
+        ><h2 class="en">Live</h2></a
       >
     </div>
   </div>

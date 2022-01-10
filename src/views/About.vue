@@ -1,68 +1,63 @@
 <template>
   <div class="about">
     <header>
-      <h1>Natthapon Boonthongkaew</h1>
-      <h4 class="info">A 25 year old, Thai nationality</h4>
-      <h4 class="info">
-        UI/UX designer, Fullstack Web Developer, Data Analyst, Database Manager,
-        Self-Taught programmer
-      </h4>
-      <h4 class="info">(+66) 084-2313735</h4>
-      <h4 class="info">hellonathapon@gmail.com</h4>
-      <h4 class="info">Languages/Tools i know and happy to working with</h4>
-      <h4 class="tech">
-        💅 Front End: HTML, CSS, SASS, javascript, Typescript, React.js, Vue.js,
-        Rest Api, GraphQL, Webpack, babel, git
-      </h4>
-      <h4 class="tech">
-        💻 Back End: Node.js, Express.js, C#/.NET CORE/ASP.NET
-      </h4>
-      <h4 class="tech">
-        💾 Databases: MySQL, MSSQL, PostgreSQL, mongoDB, ORM (Entity framework)
-      </h4>
-      <h4 class="tech">
-        ⭐ Data analytics (Python) with Jupyter Notebook, Numpy, Pandas,
-        Mathplotlib, Seaborn
-      </h4>
-      <h4 class="tech">
-        🌟 Design Pattern/Programming Paradigm: MVC, OOP
-      </h4>
+      <h1>Nathapon Boontaungkaew</h1>
+      <div class="sub-head">
+        <h4 class="info en">
+          Node.js/Back-end Developer, Python/Data Analysist
+        </h4>
+        <h4 class="info en">(+66) 084-2313735</h4>
+        <h4 class="info en">hellonathapon@gmail.com</h4>
+      </div>
+      <p class="info">
+        My name is Nathapon Boontaungkaew, i am an full-stack web developer, i
+        have a solid knowledge of Javascript and its eco-systems. I have a
+        intermediate Python skill for Data Analyst
+      </p>
+
+      <div class="highlight">
+        <h4 class="info">🌟 Why me ?</h4>
+        <p class="info">
+          Because why not? ¯\_(ツ)_/¯
+        </p>
+      </div>
+      <!-- <div class="highlight">
+        <h4 class="info">
+          🎓 Education
+        </h4>
+        <p class="info">
+          I grauted bechelor degree at Humanities from
+          <a href="https://www.mcu.ac.th/" target="_blank" ref="noreferrer"
+            >Mahajulalongkornrajavidyalaya University</a
+          >
+        </p>
+      </div> -->
+      <div class="highlight">
+        <h4 class="info">
+          🥅 เป้าหมายในปีนี้ และในชีวิต
+        </h4>
+        <p class="info">
+          ผมตั้งเป้าหมายของปีนี้ไว้ว่าจะเก่งภาษา Python และ Java ให้ได้
+          ทำไมต้องสองภาษานี้ จริงๆผมมีพื้นฐาน Python อยู่บ้างแต่ก็แค่ขั้น
+          Beginner และพื้นฐาน Java เพราะสองภาษานี้เป็นภาษาที่มี Field ทางฝั้ง
+          back-end ให้ต่อยอดออกไปได้เยอะ ดั่งที่ผมบอกไป ผมไม่ชอบ front-end เลย
+          เช่น Python สามารถไปสาย Data Analysis/Data science หรือ Robotic ได้
+        </p>
+      </div>
+      <div class="highlight">
+        <h4 class="info">
+          🎨 ความสามารถด้านอื่น/บุคลิกส่วนตัว/กิจกรรมยามว่าง
+        </h4>
+        <p class="info">
+          ผมชอบดนตรีแนว LOFI, Country/Indie/Folk
+          และตอนนี้ก็กำลังเรียนรู้เรื่องดนตรีอยุ่
+          ใครจะรู้บางทีผมอาจผันตัวไปเป็นโปรดิวเซอร์สายนี้ก็เป็นได้
+          และอีกอย่างที่ผมสนใจเป็นอย่างมากคือ เรื่อง อวกาศ
+          การถ่ายรูปดวงดาวไม่ใช่เรื่องง่ายเลย
+          มันต้องอาศัยองค์ประกอบและการเรียนรู้มากมายกว่าจะ สามารถถ่ายออกมาได้
+        </p>
+      </div>
     </header>
-    <section>
-      <h2>What do i know so far as a "Self-taught programmer..?"</h2>
-      <p>
-        <b>- Fullstack Web Developer</b>, I am fairly good in Fullstack
-        Javascript and its ecosystem
-      </p>
-      <p><b>- Data analytics</b>, Jupyter notebook</p>
-      <p><b>- C#/.NET CORE/ASP.NET</b>, Intermediate skills</p>
-    </section>
-
-    <section>
-      <h2>My Education"</h2>
-      <p>
-        Bachelor degree in Humanity from
-        <a href="https://www.mcu.ac.th/" target="_blank" ref="noreferrer"
-          >Mahachulalongkornrajavidyalaya University</a
-        >, 2019
-      </p>
-    </section>
-
-    <section>
-      <h2>Personality, hobby, interest..?</h2>
-      <p>
-        Even though i did not guatuated in CS field I am an Self-Taught
-        programmer, Enthusiastic person
-      </p>
-      <p>
-        Life is like a cup of Coffee idk lol My hobby is learning new
-        Programming Languages, technologies, frameworks and all the related
-        thing in this field
-      </p>
-      <p>
-        I am interested in Computer Science, Robotic, Nature, Camping, Astronomy
-      </p>
-    </section>
   </div>
 </template>
 
@@ -84,8 +79,18 @@ export default {
     margin-bottom: 4rem;
     text-align: start;
     padding: 1rem;
-    background: #f7f9fa;
     border-radius: 8px;
+
+    .sub-head {
+      line-height: 0.7rem;
+      margin-bottom: 2rem;
+    }
+
+    .highlight {
+      background: #f7f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+    }
 
     h1 {
       margin-bottom: 1rem;
@@ -93,7 +98,7 @@ export default {
 
     .info {
       text-align: start;
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 1rem;
     }
     .tech {

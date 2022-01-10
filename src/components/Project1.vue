@@ -9,10 +9,9 @@
     </a>
 
     <article>
-      <h2>React News App</h2>
-      <p>
-        Simple React App takes JSON News Data from NewsAPI to keep you updated
-        with latest news.
+      <h2 class="en">React News App</h2>
+      <p class="en">
+        A simple React App to keep you updated with latest global news.
       </p>
       <ul>
         <li>
@@ -37,13 +36,13 @@
         href="https://github.com/hellonathapon/react-ts-news-app"
         target="_blank"
         ref="noreferrer"
-        ><h2>Source code</h2></a
+        ><h2 class="en">Source code</h2></a
       >
       <a
         href="https://react-ts-news-app.herokuapp.com/"
         target="_blank"
         ref="noreferrer"
-        ><h2>Live</h2></a
+        ><h2 class="en">Live</h2></a
       >
     </div>
   </div>

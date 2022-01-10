@@ -6,8 +6,8 @@
     </a>
 
     <article>
-      <h2>OAuth Project</h2>
-      <p>An secure Authorization in simple and standard</p>
+      <h2 class="en">OAuth Project</h2>
+      <p class="en">A secure Authorization in simple and standard</p>
       <ul>
         <li>
           <a href="https://getbootstrap.com/" target="_blank" ref="noreferrer">
@@ -37,13 +37,13 @@
         href="https://github.com/hellonathapon/oauth-google"
         target="_blank"
         ref="noreferrer"
-        ><h2>Source code</h2></a
+        ><h2 class="en">Source code</h2></a
       >
       <a
         href="https://oauth-google-cat.herokuapp.com/"
         target="_blank"
         ref="noreferrer"
-        ><h2>Live</h2></a
+        ><h2 class="en">Live</h2></a
       >
     </div>
   </div>

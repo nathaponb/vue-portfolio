@@ -3,15 +3,12 @@
     <div id="nav">
       <div class="logo">
         <router-link to="/">
-          <img
-            src="../assets/optimized-images/profile_placeholder.png"
-            alt="le me"
-          />
+          <img src="../assets/optimized-images/me-min.png" alt="le me" />
         </router-link>
       </div>
       <article>
-        <p class="name">Nathapon</p>
-        <p class="sub-name">@hellonathapon</p>
+        <p class="name en">Nathapon</p>
+        <p class="sub-name en">@hellonathapon</p>
         <!-- <div class="info">
           <div class="icon-info">
             <img src="../assets/svg/calendar.svg" alt="date icon" />
@@ -19,37 +16,35 @@
           Born 8 June 1996
         </div> -->
         <div class="social-nav-icons">
-          <a
-            href="mailto:hellonathapon@gmail.com"
-            target="_blank"
-            ref="noreferrer"
-            class="link email-icon"
+          <a href="mailto: hellonathapon@gmail.com" class="link email-icon"
             ><img src="../assets/svg/email.svg" alt="email icon"
           /></a>
 
           <a
             class="link github-icon"
-            href="https://github.com/hellonathapon?tab=repositories"
+            href="https://github.com/hellonathapon"
             target="_blank"
             ref="noreferrer"
             ><img src="../assets/svg/github-2.svg" alt="github"
           /></a>
 
           <a
-            href="https://www.facebook.com/natha.pon.56/"
+            href="https://www.instagram.com/hellonathapon/"
             target="_blank"
             ref="noreferrer"
-            class="link facebook-icon"
+            class="link ig-icon"
             ><img src="../assets/svg/Instagram-Icon-01.svg" alt="instagram icon"
           /></a>
         </div>
       </article>
-      <section>
-        <router-link class="link about-me-link" to="/about"
+      <!-- <section>
+        <router-link class="link about-me-link en" to="/about"
           >About Me</router-link
         >
-      </section>
-      <div class="coppyright">@open source, {{ new Date().getFullYear() }}</div>
+      </section> -->
+      <div class="copyright en">
+        @open source, {{ new Date().getFullYear() }}
+      </div>
     </div>
   </div>
 </template>
@@ -66,6 +61,7 @@ $sec-col: rgb(91, 112, 131);
 
 .header {
   grid-column: 1 / span 12;
+  background: #ffffff;
   #nav {
     display: flex;
     flex-flow: row wrap;
@@ -89,7 +85,7 @@ $sec-col: rgb(91, 112, 131);
     }
     a {
       font-weight: bold;
-      color: #2c3e50;
+      color: $pri-col;
       text-decoration: none;
 
       &.router-link-exact-active {
@@ -122,7 +118,7 @@ $sec-col: rgb(91, 112, 131);
         }
       }
     }
-    .coppyright {
+    .copyright {
       display: none;
     }
   }
@@ -164,6 +160,7 @@ $sec-col: rgb(91, 112, 131);
         width: 150px;
         .name {
           font-weight: 700;
+          color: $pri-col;
         }
         .sub-name {
           color: $sec-col;
@@ -206,7 +203,7 @@ $sec-col: rgb(91, 112, 131);
           }
         }
       }
-      .coppyright {
+      .copyright {
         display: block;
         position: absolute;
         bottom: 1rem;

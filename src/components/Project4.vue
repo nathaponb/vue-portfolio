@@ -9,8 +9,8 @@
     </a>
 
     <article>
-      <h2>Todo App Project</h2>
-      <p>Vue CRUD Todo list aplication</p>
+      <h2 class="en">Todo App Project</h2>
+      <p class="en">Vue CRUD Todo list aplication</p>
       <ul>
         <li>
           <a href="https://v3.vuejs.org/" target="_blank" ref="noreferrer">
@@ -39,13 +39,13 @@
         href="https://github.com/hellonathapon/todo-app"
         target="_blank"
         ref="noreferrer"
-        ><h2>Source code</h2></a
+        ><h2 class="en">Source code</h2></a
       >
       <a
         href="https://infinite-oasis-31102.herokuapp.com/"
         target="_blank"
         ref="noreferrer"
-        ><h2>Live</h2></a
+        ><h2 class="en">Live</h2></a
       >
     </div>
   </div>
